@@ -7,14 +7,13 @@
  */
 
 define(function(require,exports,moudles){
-   var $=require("jquery")
-     return function(){
+     return function(jquery){
          (function($) {
              $.fn.pri= function() {
                  alert($("a").attr("href"))
                  // 代码区域。
              };
-         })($);
+         })(jquery);
      }
 
 })
